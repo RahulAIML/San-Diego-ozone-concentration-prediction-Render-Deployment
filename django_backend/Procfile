@@ -1,0 +1,1 @@
+web: gunicorn ozone_api.wsgi:application

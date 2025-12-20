@@ -1,0 +1,209 @@
+Date
+Site ID
+Local Site Name
+ozone_ppb
+Site Latitude
+Site Longitude
+year
+month
+dayofweek
+dayofyear
+is_weekend
+ozone_lag_1
+ozone_roll_mean_7
+ozone_roll_std_7
+ozone_roll_max_14
+tavg
+tmin
+tmax
+prcp
+snow
+wdir
+wspd
+wpgt
+pres
+tsun
+EPA_Site_ID
+EPA_Site_Name
+Weather_Filename
+impute
+Tmax_inland
+Windspeed_inland
+Tmax_ocean
+Windspeed_coast
+CUTI Coastal Upwelling Transport Index (m^2/s)
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)
+Bakun Offshore Transport (m^3/s/100m)
+Cumulative Bakun Offshore Transport (m^3/s/100m)
+Bakun Along-shore Transport (m^3/s/100m)
+Cumulative Bakun Along-shore Transport (m^3/s/100m)
+CUTI Coastal Upwelling Transport Index (m^2/s)_lag1
+CUTI Coastal Upwelling Transport Index (m^2/s)_lag3
+CUTI Coastal Upwelling Transport Index (m^2/s)_lag7
+CUTI Coastal Upwelling Transport Index (m^2/s)_lag14
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_mean
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_max
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_min
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_mean
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_max
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_min
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_mean
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_max
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_min
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_mean
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_max
+CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_min
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_lag1
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_lag3
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_lag7
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_lag14
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_mean
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_max
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll1_min
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_mean
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_max
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll3_min
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_mean
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_max
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll7_min
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_mean
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_max
+Cumulative CUTI Coastal Upwelling Transport Index (m^2/s)_roll14_min
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag1
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag3
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag7
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag14
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_mean
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_max
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_min
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_mean
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_max
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_min
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_mean
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_max
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_min
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_mean
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_max
+BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_min
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag1
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag3
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag7
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_lag14
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_mean
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_max
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll1_min
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_mean
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_max
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll3_min
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_mean
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_max
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll7_min
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_mean
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_max
+Cumulative BEUTI Biological Effective Upwelling Transport Index (mmol m/s)_roll14_min
+Bakun Offshore Transport (m^3/s/100m)_lag1
+Bakun Offshore Transport (m^3/s/100m)_lag3
+Bakun Offshore Transport (m^3/s/100m)_lag7
+Bakun Offshore Transport (m^3/s/100m)_lag14
+Bakun Offshore Transport (m^3/s/100m)_roll1_mean
+Bakun Offshore Transport (m^3/s/100m)_roll1_max
+Bakun Offshore Transport (m^3/s/100m)_roll1_min
+Bakun Offshore Transport (m^3/s/100m)_roll3_mean
+Bakun Offshore Transport (m^3/s/100m)_roll3_max
+Bakun Offshore Transport (m^3/s/100m)_roll3_min
+Bakun Offshore Transport (m^3/s/100m)_roll7_mean
+Bakun Offshore Transport (m^3/s/100m)_roll7_max
+Bakun Offshore Transport (m^3/s/100m)_roll7_min
+Bakun Offshore Transport (m^3/s/100m)_roll14_mean
+Bakun Offshore Transport (m^3/s/100m)_roll14_max
+Bakun Offshore Transport (m^3/s/100m)_roll14_min
+Cumulative Bakun Offshore Transport (m^3/s/100m)_lag1
+Cumulative Bakun Offshore Transport (m^3/s/100m)_lag3
+Cumulative Bakun Offshore Transport (m^3/s/100m)_lag7
+Cumulative Bakun Offshore Transport (m^3/s/100m)_lag14
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll1_mean
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll1_max
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll1_min
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll3_mean
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll3_max
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll3_min
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll7_mean
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll7_max
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll7_min
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll14_mean
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll14_max
+Cumulative Bakun Offshore Transport (m^3/s/100m)_roll14_min
+Bakun Along-shore Transport (m^3/s/100m)_lag1
+Bakun Along-shore Transport (m^3/s/100m)_lag3
+Bakun Along-shore Transport (m^3/s/100m)_lag7
+Bakun Along-shore Transport (m^3/s/100m)_lag14
+Bakun Along-shore Transport (m^3/s/100m)_roll1_mean
+Bakun Along-shore Transport (m^3/s/100m)_roll1_max
+Bakun Along-shore Transport (m^3/s/100m)_roll1_min
+Bakun Along-shore Transport (m^3/s/100m)_roll3_mean
+Bakun Along-shore Transport (m^3/s/100m)_roll3_max
+Bakun Along-shore Transport (m^3/s/100m)_roll3_min
+Bakun Along-shore Transport (m^3/s/100m)_roll7_mean
+Bakun Along-shore Transport (m^3/s/100m)_roll7_max
+Bakun Along-shore Transport (m^3/s/100m)_roll7_min
+Bakun Along-shore Transport (m^3/s/100m)_roll14_mean
+Bakun Along-shore Transport (m^3/s/100m)_roll14_max
+Bakun Along-shore Transport (m^3/s/100m)_roll14_min
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_lag1
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_lag3
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_lag7
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_lag14
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll1_mean
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll1_max
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll1_min
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll3_mean
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll3_max
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll3_min
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll7_mean
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll7_max
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll7_min
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll14_mean
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll14_max
+Cumulative Bakun Along-shore Transport (m^3/s/100m)_roll14_min
+sst_date
+sst_date.1
+sst_flag_anom
+sst_flag_err
+sst_flag_sst
+sst_value_anom
+sst_value_err
+sst_value_sst
+region_type
+temp_range
+sst_anomaly
+sst_value_anom_lag1
+sst_value_anom_lag3
+sst_value_anom_lag7
+sst_value_anom_lag14
+sst_value_err_lag1
+sst_value_err_lag3
+sst_value_err_lag7
+sst_value_err_lag14
+sst_value_sst_lag1
+sst_value_sst_lag3
+sst_value_sst_lag7
+sst_value_sst_lag14
+thermal_stability
+marine_layer_depth_proxy
+marine_layer_presence
+dow
+holiday
+season
+month_sin
+month_cos
+week_of_year
+is_school_day
+land_sea_temp_diff
+coast_inland_wind_diff
+ozone_exceed_70
+heatwave_flag
+strong_upwelling_event
+geometry
+distance_to_coast_km
