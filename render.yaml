@@ -2,7 +2,7 @@ services:
   - type: web
     name: ozone-predictor
     env: python
-    buildCommand: npm install --prefix frontend && npm run build --prefix frontend && pip install -r requirements.txt
+    buildCommand: npm install --prefix frontend && npm run build --prefix frontend && pip install --upgrade pip && pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
