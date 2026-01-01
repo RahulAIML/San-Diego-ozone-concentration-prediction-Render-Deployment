@@ -36,7 +36,9 @@ function App() {
 
   const fetchLogs = async () => {
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      // Truncate trailing slash if present to avoid //api/... (protocol relative) bug if user sets VITE_API_URL to '/'
+      let envUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : '');
+      const apiUrl = envUrl.replace(/\/$/, '');
       const response = await axios.get(`${apiUrl}/api/logs/`);
       setLogs(response.data);
     } catch (err) {
@@ -60,7 +62,8 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      let envUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : '');
+      const apiUrl = envUrl.replace(/\/$/, '');
       const response = await axios.post(`${apiUrl}/api/predict/`, formData);
       setPrediction(response.data.prediction);
       fetchLogs();
