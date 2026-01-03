@@ -1,36 +1,21 @@
 import os
 import json
-import sqlite3
 import pandas as pd
 import numpy as np
 import joblib
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
+import database  # Import the new DB module
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, 'model_artifacts')
-DB_PATH = os.path.join(BASE_DIR, 'database.db')
 
 app = Flask(__name__, static_folder=os.path.join(BASE_DIR, 'frontend/dist'))
 CORS(app)
 
 # --- Database Setup ---
-def init_db():
-    conn = sqlite3.connect(DB_PATH)
-    c = conn.cursor()
-    c.execute('''
-        CREATE TABLE IF NOT EXISTS prediction_logs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            input_data TEXT,
-            predicted_output TEXT
-        )
-    ''')
-    conn.commit()
-    conn.close()
-
-init_db()
+database.init_db()
 
 # --- Load Artifacts ---
 model_artifacts = {}
@@ -130,18 +115,8 @@ def predict():
             "source": "Mock"
         }
     
-    # Store in SQLite
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        c = conn.cursor()
-        c.execute('INSERT INTO prediction_logs (input_data, predicted_output) VALUES (?, ?)', 
-                  (json.dumps(input_data), json.dumps(predicted_output)))
-        log_id = c.lastrowid
-        conn.commit()
-        conn.close()
-    except Exception as e:
-        app.logger.error(f"DB Error: {e}")
-        log_id = -1
+    # Store in Database
+    log_id = database.insert_log(input_data, predicted_output)
 
     return jsonify({
         "status": "success",
@@ -152,35 +127,10 @@ def predict():
 
 @app.route('/api/logs/', methods=['GET'])
 def get_logs():
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        conn.row_factory = sqlite3.Row
-        c = conn.cursor()
-        c.execute('SELECT * FROM prediction_logs ORDER BY created_at DESC LIMIT 50')
-        rows = c.fetchall()
-        conn.close()
-        
-        data = []
-        for row in rows:
-            try:
-                in_d = json.loads(row['input_data'])
-            except:
-                in_d = row['input_data']
-                
-            try:
-                out_d = json.loads(row['predicted_output'])
-            except:
-                out_d = row['predicted_output']
-                
-            data.append({
-                "id": row['id'],
-                "created_at": row['created_at'],
-                "input": in_d,
-                "output": out_d
-            })
+    data = database.fetch_logs(limit=50)
+    if data is not None:
         return jsonify(data)
-    except Exception as e:
-        app.logger.error(f"DB Read Error: {e}")
+    else:
         return jsonify({"error": "Failed to fetch logs"}), 500
 
 # --- Serve Frontend ---

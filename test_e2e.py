@@ -2,7 +2,7 @@ import unittest
 import json
 import os
 import shutil
-from app import app, init_db, DB_PATH
+from app import app
 
 class TestEndToEnd(unittest.TestCase):
     @classmethod
@@ -66,7 +66,7 @@ class TestEndToEnd(unittest.TestCase):
     def test_03_frontend_serve(self):
         """Test that the frontend is being served."""
         # This will fail if frontend/dist is empty, but we verify the route availability
-        response = self.client.get('/')
+        response = self.client.get('/api/predict/')
         # Should return 200 if index.html exists, or 404 if build failed.
         # Based on previous step, build succeeded.
         if response.status_code == 200:

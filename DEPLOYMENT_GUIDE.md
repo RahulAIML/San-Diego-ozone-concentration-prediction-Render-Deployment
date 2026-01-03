@@ -23,11 +23,15 @@ The project includes a `render.yaml` file that defines the service.
 4. **Environment Variables**:
    - `PYTHON_VERSION`: `3.9.0` (or similar)
    - `VITE_API_URL`: Leave empty or set to `/` since the frontend is served by the same backend.
+   - **`DATABASE_URL`**: Connection string for your PostgreSQL database (e.g., `postgres://user:pass@host:port/dbname`).
+     - If not set, the app defaults to an ephemeral SQLite database.
 
 ## Troubleshooting
 - **Build Fails**: Check if `npm run build` works locally. Ensure `frontend/dist` is created.
 - **Application Error**: Check Render logs. Ensure `model_artifacts/` are committed and present.
-- **Database**: The SQLite database (`database.db`) is ephemeral on Render's free tier. It will be reset on redeploys. For persistent storage, upgrade to a managed database or Render Disk (paid).
+- **Database**:
+  - **SQLite (Default)**: If `DATABASE_URL` is omitted, `database.db` is used. This is ephemeral on Render (data is lost on redeploy).
+  - **PostgreSQL**: Set `DATABASE_URL` for persistent storage. Ensure your Postgres service is running and accessible (internal URL for Render-to-Render communication).
 
 ## Directory Structure Verification
 Ensure your repo looks like this for the build to work:
@@ -43,3 +47,4 @@ Ensure your repo looks like this for the build to work:
 │   └── ...
 └── ...
 ```
+
